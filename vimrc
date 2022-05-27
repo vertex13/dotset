@@ -6,11 +6,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " Apply plugins.
+" (Reload .vimrc and :PlugInstall to install plugins. :PlugClean to uninstall.)
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'elixir-editors/vim-elixir', { 'for': 'elixir' }
-Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -23,7 +22,4 @@ nmap <C-n> :NERDTreeToggle<CR>
 " Replace TAB to spaces.
 set expandtab
 set shiftwidth=4
-
-" Enable automatic running of :RustFmt when saving a buffer.
-let g:rustfmt_autosave = 1
 

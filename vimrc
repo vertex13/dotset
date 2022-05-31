@@ -10,6 +10,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tikhomirov/vim-glsl'
 
 call plug#end()
 
@@ -21,5 +22,5 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 " Replace TAB to spaces.
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 

@@ -16,6 +16,7 @@ call plug#end()
 
 " Set options.
 set number
+set autoindent
 
 " Key mappings.
 nmap <C-n> :NERDTreeToggle<CR>
@@ -23,4 +24,10 @@ nmap <C-n> :NERDTreeToggle<CR>
 " Replace TAB to spaces.
 set expandtab
 set shiftwidth=2
+
+" Search down into subfolders.
+set path+=**
+
+" Display all matching files on tab pressed.
+set wildmenu
 

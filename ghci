@@ -1,3 +1,3 @@
-:def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
-:def hdoc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
+:def hoogle \x -> return $ ":!stack hoogle \"" ++ x ++ "\""
+:def hdoc \x -> return $ ":!stack hoogle -- --info \"" ++ x ++ "\""
 
